@@ -1,25 +1,36 @@
-import logo from './logo.svg';
-import './App.css';
+
+// import Parent from './Parent';
+// import { UseRef } from './UseRef';
+
+// import One from "./component/One";
+import { createContext } from "react";
+import UseReducer from './component/UseReducer';
+
+
+export const  data = createContext()
+
+
 
 function App() {
+
+
+  // const data = 'aditya'
+  // console.log(data)
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+{/* <UseRef/> */}
+{/* <Parent/> */}
+    {/* <data.Provider value={ 'aditya'}>
+    <One data={data} />
+    </data.Provider> */}
+
+    <UseReducer/>
+
+  </>
   );
 }
+
+
+
 
 export default App;
